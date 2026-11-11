@@ -1065,3 +1065,162 @@ img {
     }
 
 }
+
+
+
+/* =========================
+   SOFTWARE DEVELOPER PORTFOLIO UPDATES
+========================= */
+
+/* Consistent section spacing and anchor positioning */
+section[id] {
+    scroll-margin-top: 85px;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* Hero text readability */
+.hero h2 {
+    line-height: 1.35;
+}
+
+.hero h3 {
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+}
+
+.hero-description {
+    line-height: 1.85;
+}
+
+/* Internship and project content */
+.project-card + .project-card {
+    margin-top: 24px;
+}
+
+.project-content ul {
+    margin: 0 0 16px 21px;
+    color: #64748b;
+}
+
+.project-content li {
+    margin: 8px 0;
+    padding-left: 4px;
+}
+
+.project-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 34px rgba(23, 37, 84, 0.08);
+}
+
+/* Ensure all skill and technology tags wrap cleanly */
+.skill-tags span,
+.project-technologies span,
+.linkedin-tags span {
+    line-height: 1.4;
+}
+
+/* Keep long contact details readable */
+.contact-card a {
+    overflow-wrap: anywhere;
+}
+
+/* Responsive navigation and layout refinements */
+@media (max-width: 800px) {
+    .nav-container {
+        position: relative;
+    }
+
+    .navbar {
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .navbar a {
+        padding: 7px 0;
+    }
+
+    .hero-container {
+        gap: 38px;
+    }
+
+    .hero-image {
+        flex-basis: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: min(92%, 1150px);
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 9vw, 39px);
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-email {
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons {
+        gap: 10px;
+    }
+
+    .btn {
+        justify-content: center;
+        padding: 11px 16px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .project-header {
+        gap: 13px;
+    }
+
+    .project-number {
+        flex: 0 0 48px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .certificate-card {
+        padding: 22px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
